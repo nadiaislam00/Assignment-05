@@ -18,7 +18,7 @@ document.getElementById('donate-btn').addEventListener('click', function(){
     // common function added
 const donateAmouunt = parseFloat(getInput('donate-amount'));
 
-if(donateAmouunt >= 0 && donateAmouunt !== 'string' && donateAmouunt <= balance.innerText && donateAmouunt!==balance.innerText){
+if(donateAmouunt >= 0 && donateAmouunt !== 'string' && donateAmouunt <= balance.innerText && donateAmouunt!=balance.innerText){
     const balance = parseFloat(document.getElementById('balance').innerText);
 
     const totalBalance =  balance - donateAmouunt;
@@ -67,7 +67,7 @@ document.getElementById('donate-btn2').addEventListener('click', function(){
      // common function added
     const donateAmouunt2 = parseFloat(getInput('donate-amount2'));
     
-    if(donateAmouunt2 >= 0 && donateAmouunt2 !== 'string'&& donateAmouunt2 <= balance.innerText){
+    if(donateAmouunt2 >= 0 && donateAmouunt2 !== 'string'&& donateAmouunt2 <= balance.innerText && donateAmouunt2!=balance.innerText){
         const balance2 = parseFloat(document.getElementById('balance').innerText);
     
         const totalBalance2 =  balance2 - donateAmouunt2;
@@ -116,7 +116,7 @@ document.getElementById('donate-btn3').addEventListener('click', function(){
      // common function added
     const donateAmouunt3 = parseFloat(getInput('donate-amount3'));
     
-    if(donateAmouunt3 >= 0 && donateAmouunt3 !== 'string'&& donateAmouunt3 <= balance.innerText){
+    if(donateAmouunt3 >= 0 && donateAmouunt3 !== 'string'&& donateAmouunt3 <= balance.innerText && donateAmouunt3!=balance.innerText){
         const balance3 = parseFloat(document.getElementById('balance').innerText);
     
         const totalBalance3 =  balance3 - donateAmouunt3;
@@ -168,6 +168,17 @@ document.getElementById('donate-btn3').addEventListener('click', function(){
     donateTab.classList.remove('bg-[#B4F461]','text-black');    
     donateTab.classList.add('btn-outline', 'text-gray-400');    
 
+    })
+
+    const donateTab = document.getElementById('donate-tab');
+    donateTab.addEventListener('click', function(){
+
+        donateTab.classList.add('btn', 'bg-[#B4F461]', 'font-bold', 'text-xl', 'text-black')
+        donateTab.classList.remove('btn-outline', 'text-gray-400')
+        historyTab.classList.remove('bg-[#B4F461]','text-black');    
+       historyTab.classList.add('btn-outline', 'text-gray-400');
+
+       showSection('donate');
     })
 
 //    history
