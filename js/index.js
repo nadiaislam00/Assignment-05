@@ -75,4 +75,14 @@ document.getElementById('donate-btn3').addEventListener('click', function(){
     
     })
 
-    
+    const historyTab = document.getElementById('history-tab');
+    historyTab.addEventListener('click', function(){
+
+        historyTab.classList.add('btn', 'bg-[#B4F461]', 'font-bold', 'text-xl', 'text-black')
+        historyTab.classList.remove('btn-outline', 'text-gray-400')
+
+    const donateTab = document.getElementById('donate-tab');
+    donateTab.classList.remove('bg-[#B4F461]','text-black');    
+    donateTab.classList.add('btn-outline', 'text-gray-400');    
+
+    })
