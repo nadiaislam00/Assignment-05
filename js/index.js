@@ -1,6 +1,17 @@
+// common function
+
+function getInput(id){
+    const inputValue = document.getElementById(id).value;
+    return inputValue;
+}
+
+
+
+// card1
 document.getElementById('donate-btn').addEventListener('click', function(){
 
-const donateAmouunt = parseFloat(document.getElementById('donate-amount').value);
+    // common function added
+const donateAmouunt = parseFloat(getInput('donate-amount'));
 
 if(donateAmouunt >= 0 && donateAmouunt !== 'string'){
     const balance = parseFloat(document.getElementById('balance').innerText);
@@ -23,11 +34,14 @@ else{
 }
 
 })
+
+
 // card2
 
 document.getElementById('donate-btn2').addEventListener('click', function(){
 
-    const donateAmouunt2 = parseFloat(document.getElementById('donate-amount2').value);
+     // common function added
+    const donateAmouunt2 = parseFloat(getInput('donate-amount2'));
     
     if(donateAmouunt2 >= 0 && donateAmouunt2 !== 'string'){
         const balance2 = parseFloat(document.getElementById('balance').innerText);
@@ -50,12 +64,14 @@ document.getElementById('donate-btn2').addEventListener('click', function(){
     
     })
 
-    // card3
-
     
+     // card3
+
 document.getElementById('donate-btn3').addEventListener('click', function(){
 
-    const donateAmouunt3 = parseFloat(document.getElementById('donate-amount3').value);
+
+     // common function added
+    const donateAmouunt3 = parseFloat(getInput('donate-amount3'));
     
     if(donateAmouunt3 >= 0 && donateAmouunt3 !== 'string'){
         const balance3 = parseFloat(document.getElementById('balance').innerText);

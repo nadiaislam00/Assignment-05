@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <title>Blog</title>
+    <style>
+        .lexend {
+         font-family: "Lexend", sans-serif;
+       }
+        </style>
+</head>
+<body class="lexend">
+    <header>
+        <nav class="backdrop-blur-lg bg-white/30">
+            <div class="navbar bg-[#F9F7F3] p-5 flex  justify-around">
+                <div class=" justify-center">
+            <div class="blog-btn">
+               <a href="index.html"> <button class="btn bg-[#B4F461] font-bold text-xl">Home</button></a>
+            </div>
+                </div>
+                <div class=" flex gap-5">
+                  <img src="assets/logo.png" >
+                  <h3 class="font-bold text-xl">Donate Bangladesh</h3>
+                </div>
+                <div class=" flex gap-2 justify-center">
+                    <img src="assets/coin.png" alt="">
+                       <p id="balance" class="text-xl font-medium text-gray-500">5000</p>
+                       <p  class="text-xl font-medium text-gray-500">BDT</p>
+                </div>
+              </div>
+            
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="mt-20 w-[90%] mx-auto">
+        <div class="important mb-10 flex gap-2">
+            <h1 class="font-bold text-5xl">Important FAQ</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+              </svg>
+              
+        </div>
+        <div class="join join-vertical w-full">
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-2xl font-medium">What is the Document Object Model (DOM)?</div>
+              <div class="collapse-content">
+                <p class="text-gray-600">The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of an HTML or XML document as a tree of nodes, where each node is an element, attribute, or text. The DOM allows developers to interact with and manipulate the content, structure, and styles of a webpage using JavaScript.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-2xl font-medium">How do you select an element from the DOM?</div>
+              <div class="collapse-content">
+                <p class="text-gray-600">You can select an element from the DOM using methods like document.querySelector() to select the first matching element or document.querySelectorAll() to select all matching elements. You can also use getElementById(), getElementsByClassName(), or getElementsByTagName() for specific types of selections.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-2xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+              <div class="collapse-content">
+                <p class="text-gray-600">Event delegation is a technique where a single event listener is added to a parent element, allowing it to handle events from its child elements using event bubbling. It's useful for improving efficiency by reducing the number of event listeners and for handling events on dynamically added elements.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-2xl font-medium">How do you manipulate an element's attributes and styles using the DOM? </div>
+                <div class="collapse-content">
+                  <p class="text-gray-600">You can manipulate an element’s attributes using methods like getAttribute() to retrieve an attribute, setAttribute() to assign a new value, and removeAttribute() to delete it. For styles, you can modify them by directly setting values with element.style.propertyName = "value", retrieve computed styles with window.getComputedStyle(element), and clear styles by setting them to an empty string. Class manipulation can be done using classList.add() to add a class, classList.remove() to remove it, and classList.toggle() to switch a class on or off.</p>
+                </div>
+              </div>
+          </div>
+    </main>
+</body>
+</html>
