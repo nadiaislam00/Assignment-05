@@ -15,7 +15,8 @@ if(donateAmouunt >= 0 && donateAmouunt !== 'string'){
 
     const totalDonateAmount = document.getElementById('donate-balance');
     totalDonateAmount.innerText = totalDonate;
-    donateAmouunt = '';
+  
+    document.getElementById('my_modal_1').showModal();
 }
 else{
     alert('Invalid Amount!!');
@@ -41,6 +42,7 @@ document.getElementById('donate-btn2').addEventListener('click', function(){
     
         const totalDonateAmount2 = document.getElementById('donate-balance2');
         totalDonateAmount2.innerText = totalDonate2;
+        document.getElementById('my_modal_1').showModal();
     }
     else{
         alert('Invalid Amount!!');
@@ -68,6 +70,7 @@ document.getElementById('donate-btn3').addEventListener('click', function(){
     
         const totalDonateAmount3 = document.getElementById('donate-balance3');
         totalDonateAmount3.innerText = totalDonate3;
+        document.getElementById('my_modal_3').showModal();
     }
     else{
         alert('Invalid Amount!!');
@@ -86,3 +89,5 @@ document.getElementById('donate-btn3').addEventListener('click', function(){
     donateTab.classList.add('btn-outline', 'text-gray-400');    
 
     })
+
+   
