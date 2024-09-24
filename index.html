@@ -15,10 +15,10 @@
 }
  </style>
 </head>
-<body class="lexend">
-    <header>
+<body class="lexend pt-72">
+    <header class="fixed w-full z-50 top-0 border-b">
 <!-- navbar start -->
-<nav>
+<nav class="backdrop-blur-lg bg-white/30">
     <div class="navbar bg-[#F9F7F3] p-5 flex  justify-around">
         <div class=" justify-center">
     <div class="blog-btn">
@@ -31,25 +31,110 @@
         </div>
         <div class=" flex gap-2 justify-center">
             <img src="assets/coin.png" alt="">
-               <p class="text-xl font-medium text-gray-500">5000 BDT</p>
+               <p id="balance" class="text-xl font-medium text-gray-500">5000</p>
+               <p  class="text-xl font-medium text-gray-500">BDT</p>
         </div>
       </div>
+<!-- buttons start -->
+      <div class="buttons flex justify-center gap-5 mt-12 pb-5 ">
+        <button class="btn bg-[#B4F461] font-bold text-xl">Donation</button>
+        <button id="history-tab" class="btn btn-outline font-bold text-xl text-gray-500">History</button>
+    
+    
+    </div>
 </nav>
 <!-- navbar end -->
 
-<!-- buttons start -->
-<div class="buttons flex justify-center gap-5 mt-24">
-    <button class="btn bg-[#B4F461] font-bold text-xl">Donation</button>
-    <button class="btn btn-outline font-bold text-xl text-gray-500">History</button>
 
-
-</div>
-
-<!-- buttons end -->
     </header>
-    <main>
-        
+    <main class="relative">
+        <!-- cards -->
+         <div class="cards w-[80%] mx-auto flex flex-col gap-7">
+            <!-- crad1 -->
+            <div class="card1 w-full border flex gap-5 p-7 rounded-lg">
+            <div class="card-img w-[50%]">
+<img src="assets/noakhali.png" class="w-full h-full">
+            </div>
+
+            <!-- card content -->
+            <div class="crad-content w-[50%] flex flex-col gap-10">
+<button class="btn w-[30%] flex">
+    <img src="assets/coin.png" alt="">
+               <p id="donate-balance" class="text-[16px] font-medium text-gray-500">0</p>
+               <p class="text-[16px] font-medium text-gray-500">BDT</p>
+</button>
+<p class="font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</p>
+<p class="text-[16px] font-light text-gray-400"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+<input id="donate-amount" class="border p-4 rounded-lg" type="text" placeholder="Write Donation Amount">
+<button id="donate-btn" class="btn bg-[#B4F461] font-bold text-xl">Donation Now</button>
+            </div>
+            </div>
+
+
+
+        <!-- card2 -->
+        <div class="card2 w-full border flex gap-5 p-7 rounded-lg">
+            <div class="card-img w-[50%]">
+<img src="assets/feni.png" class="w-full h-full">
+            </div>
+
+            <!-- card content -->
+            <div class="crad-content w-[50%] flex flex-col gap-12">
+<button class="btn w-[30%] flex">
+    <img src="assets/coin.png" alt="">
+               <p id="donate-balance2" class="text-[16px] font-medium text-gray-500">6000</p>
+               <p class="text-[16px] font-medium text-gray-500">BDT</p>
+
+</button>
+<p class="font-bold text-xl">Donate for Flood Relief in Feni,Bangladesh</p>
+<p class="text-[16px] font-light text-gray-400"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+<input  id="donate-amount2"  class="border p-4 rounded-lg" type="text" placeholder="Write Donation Amount">
+<button id="donate-btn2" class="btn bg-[#B4F461] font-bold text-xl">Donation Now</button>
+            </div>
+            </div>
+
+
+
+            <!-- card3 -->
+            <div class="card3 w-full border flex gap-5 p-7 rounded-lg">
+                <div class="card-img w-[50%]">
+    <img src="assets/quota-protest.png" class="w-full h-full">
+                </div>
+    
+                <!-- card content -->
+                <div class="crad-content w-[50%] flex flex-col gap-12">
+    <button class="btn w-[30%] flex">
+        <img src="assets/coin.png" alt="">
+                   <p id="donate-balance3" class="text-[16px] font-medium text-gray-500">2400</p>
+                   <p class="text-[16px] font-medium text-gray-500">BDT</p>
+    
+    </button>
+    <p class="font-bold text-xl">Aid for Injured in the Quota Movement</p>
+    <p class="text-[16px] font-light text-gray-400"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+    <input  id="donate-amount3"  class="border p-4 rounded-lg" type="text" placeholder="Write Donation Amount">
+    <button id="donate-btn3" class="btn bg-[#B4F461] font-bold text-xl">Donation Now</button>
+                </div>
+                </div>
+            <!-- <div class="card1 w-full border flex gap-5 p-7 rounded-lg">
+                <div class="card-img w-[50%]">
+    <img src="assets/quota-protest.png" class="w-full h-full">
+                </div>
+    
+                <div class="crad-content w-[50%] flex flex-col gap-14">
+    <button class="btn w-[25%] flex">
+        <img src="assets/coin.png" alt="">
+                   <p class="text-[16px] font-medium text-gray-500">2400 BDT</p>
+    </button>
+    <p class="font-bold text-xl">Aid for Injured in the Quota Movement</p>
+    <p class="text-[16px] font-light text-gray-400"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+    <input class="border p-4 rounded-lg" type="text" placeholder="Write Donation Amount">
+    <button id="donate-btn" class="btn bg-[#B4F461] font-bold text-xl">Donation Now</button>
+                </div>
+                </div> -->
+         </div>
     </main>
-    <footer></footer>
+    <footer class="bg-[#F9F7F3] mt-20 h-36"></footer>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
