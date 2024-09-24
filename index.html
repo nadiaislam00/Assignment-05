@@ -22,12 +22,12 @@
     <div class="navbar bg-[#F9F7F3] p-5 flex  justify-around bg-blur-md opacity-80">
         <div class=" justify-center">
     <div class="blog-btn">
-      <a href="blog.html"><button class="btn bg-[#B4F461] font-bold text-xl">Blog</button></a>
+      <button id="blog" class="btn bg-[#B4F461] font-bold text-xl text-black">Blog</button>
     </div>
         </div>
-        <div class=" flex gap-5">
+        <div class="flex gap-2 lg:flex">
           <img src="assets/logo.png" >
-          <h3 class="font-bold text-xl">Donate Bangladesh</h3>
+          <h3 class="hidden lg:block font-bold text-xl">Donate Bangladesh</h3>
         </div>
         <div class=" flex gap-2 justify-center">
             <img src="assets/coin.png" alt="">
@@ -51,14 +51,14 @@
         <!-- cards -->
          <div id="donate" class="cards w-[80%] mx-auto flex flex-col gap-7">
             <!-- crad1 -->
-            <div class="card1 w-full border flex gap-5 p-7 rounded-lg">
-            <div class="card-img w-[50%]">
+            <div class="flex flex-col lg:flex-row w-full border gap-5 p-7 rounded-lg">
+            <div class="w-full lg:w-[50%]">
 <img src="assets/noakhali.png" class="w-full h-full">
             </div>
 
             <!-- card content -->
-            <div class="crad-content w-[50%] flex flex-col gap-10">
-<button class="btn w-[30%] flex">
+            <div class="w-full lg:w-[50%] flex flex-col gap-10">
+<button class="btn w-[50%] mt-5 lg:w-[40%] flex">
     <img src="assets/coin.png" alt="">
                <p id="donate-balance" class="text-[16px] font-medium text-gray-500">0</p>
                <p class="text-[16px] font-medium text-gray-500">BDT</p>
@@ -88,14 +88,14 @@
 
 
         <!-- card2 -->
-        <div class="card2 w-full border flex gap-5 p-7 rounded-lg">
-            <div class="card-img w-[50%]">
+        <div class="flex flex-col lg:flex-row w-full border gap-5 p-7 rounded-lg">
+            <div class="w-full lg:w-[50%]">
 <img src="assets/feni.png" class="w-full h-full">
             </div>
 
             <!-- card content -->
-            <div class="crad-content w-[50%] flex flex-col gap-12">
-<button class="btn w-[30%] flex">
+            <div class="w-full lg:w-[50%] flex flex-col gap-10">
+<button class="btn w-[60%] mt-5 lg:w-[40%] flex">
     <img src="assets/coin.png" alt="">
                <p id="donate-balance2" class="text-[16px] font-medium text-gray-500">6000</p>
                <p class="text-[16px] font-medium text-gray-500">BDT</p>
@@ -126,14 +126,14 @@
 
 
             <!-- card3 -->
-            <div class="card3 w-full border flex gap-5 p-7 rounded-lg">
-                <div class="card-img w-[50%]">
+            <div class="flex flex-col lg:flex-row w-full border gap-5 p-7 rounded-lg">
+                <div class="w-full lg:w-[50%]">
     <img src="assets/quota-protest.png" class="w-full h-full">
                 </div>
     
                 <!-- card content -->
-                <div class="crad-content w-[50%] flex flex-col gap-12">
-    <button class="btn w-[30%] flex">
+                <div class="w-full lg:w-[50%] flex flex-col gap-10">
+    <button class="btn w-[60%] mt-5 lg:w-[40%] flex">
         <img src="assets/coin.png" alt="">
                    <p id="donate-balance3" class="text-[16px] font-medium text-gray-500">2400</p>
                    <p class="text-[16px] font-medium text-gray-500">BDT</p>
@@ -171,5 +171,6 @@
     <footer class="bg-[#F9F7F3] mt-20 h-36"></footer>
 
     <script src="js/index.js"></script>
+    <script src="js/blog.js"></script>
 </body>
 </html>

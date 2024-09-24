@@ -1,3 +1,12 @@
+document.getElementById('blog').addEventListener('click', function(){
+
+    window.location.href = 'blog.html';
+})
+
+
+
+
+
 // common function
 
 function getInput(id){
