@@ -27,7 +27,7 @@ document.getElementById('donate-btn').addEventListener('click', function(){
     // common function added
 const donateAmouunt = parseFloat(getInput('donate-amount'));
 
-if(donateAmouunt >= 0 && donateAmouunt !== 'string' && donateAmouunt <= balance.innerText && donateAmouunt!=balance.innerText){
+if(donateAmouunt > 0 && donateAmouunt !== 'string' && donateAmouunt <= balance.innerText && donateAmouunt!=balance.innerText){
     const balance = parseFloat(document.getElementById('balance').innerText);
 
     const totalBalance =  balance - donateAmouunt;
